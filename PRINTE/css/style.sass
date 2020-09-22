@@ -1,0 +1,519 @@
+
+//====================Colors==========================
+
+$cl_white: #ffffff
+$cl_blue: #1AB0CE
+$cl_gray:#cccccc
+$cl_black:#3A4047
+//=========================Comon=======================
+body
+    background-color: $cl_white
+    font-size: 14px
+    line-height: 16px
+    font-family: 'Clear Sans'
+    
+
+*, *::before, *::after 
+  box-sizing: border-box
+
+
+a 
+  text-decoration: none
+
+
+ul 
+  margin-left: 0
+  padding-left: 0
+
+
+li 
+  list-style-type: none
+
+
+.container 
+  width: 100%
+  max-width: 1170px
+  margin: 0 auto
+  padding: 0 15px
+
+//====================================Header===========================================
+.header__top-inner
+    display: flex
+    justify-content: space-between
+    text-align: center
+
+.header__logo
+    padding-top: 17px
+    padding-bottom: 12px
+
+.header__description
+    max-width: 375px
+    padding-top: 17px
+    padding-bottom: 17px
+
+.header__description-text
+    padding-top: 11px
+
+.header__description-work-day
+    font-weight: bold
+
+.header__personal-cabinet
+    text-decoration: underline
+    padding-top: 25px
+    cursor: pointer
+    position: relative
+    &::before
+        content: ""
+        background: url("../img/feather_icon.png")
+        background-position: center center
+        background-size: cover
+        width: 15px
+        height: 15px
+        position: absolute
+        top: 25px
+        left: -25px
+    &:hover
+        text-decoration: underline
+
+
+.header__contacts
+    padding-top: 25px
+    padding-bottom: 23px
+    .contact__inner
+        padding-top: 25px
+
+
+.email
+    text-decoration: underline
+    &:hover
+        cursor: pointer
+
+.header__basket
+    padding-top: 36px
+
+.contact__inner
+    display: flex
+
+.phone
+    font-weight: bold
+    position: relative
+    padding-left: 25px
+    &::before
+        content: ""
+        background: url("../img/phone.png")
+        background-position: center center
+        background-size: cover
+        width: 15px
+        height: 15px
+        position: absolute
+        top: 0px
+        left: 5px
+    &::after
+        content: ""
+        background: url("../img/Ellipse.png")
+        background-position: center center
+        background-size: cover
+        width: 15px
+        height: 15px
+        position: absolute
+        top: 0px
+        right: -20px
+
+.header__menu-inner
+    .menu
+        border-top: 1px solid $cl_gray
+        li
+            padding-top: 10px
+            border-top: 2px solid transparent
+            position: relative
+            &::after
+                content: ""
+                background-color: $cl_gray
+                width: 2px
+                height: 14px
+                position: absolute
+                top: 14px
+                left: -50px
+            &:first-child::after
+                display: none
+            &:hover
+                color: $cl_blue
+                border-top: 2px solid $cl_blue
+                cursor: pointer
+
+
+.menu
+    display: flex
+    justify-content: space-between
+
+.header__content
+    min-height: 500px
+    background-position: center center
+    background-size: cover
+    color: $cl_white
+    text-align: center
+    position: relative
+
+.header__title
+    padding-top: 153px
+
+.main__head
+    font-size: 50px
+    position: relative
+    &::after
+        content: ""
+        background-color: $cl_white
+        width: 120px
+        height: 1px
+        position: absolute
+        top: 40px
+        left: 45%
+   
+
+.header__subtitle
+    padding-bottom: 27px
+    font-size: 24px
+
+.btn
+    background-color:$cl_blue
+    padding: 12px 22px 15px 22px
+    border-radius: 3px
+    cursor: pointer
+    &:hover
+        background-color:$cl_white
+        color: $cl_blue
+        
+//==========================CallMe
+.callMe
+    border-radius: 50%
+    background: $cl_blue
+    width: 108px
+    height: 108px
+    position: absolute
+    bottom: 50px
+    right: 150px
+    padding: 40px 10px 10px 10px
+    color: $cl_white
+    z-index: 20
+    &::after
+        content: ""
+        background: url("../img/phone_white.png")
+        background-position: center center
+        background-size: cover
+        width: 25px
+        height: 25px
+        position: absolute
+        top: 10px
+        left: 40px
+    &:hover
+        cursor: pointer
+        background: $cl_white
+        border: 1px solid $cl_blue
+        color: $cl_blue
+        
+//=======================================Production=============
+.section-header
+    text-align: center
+    padding-top: 29px
+    font-size: 36px
+    line-height: 42px
+    padding-bottom: 44px
+
+.production__inner
+    display: flex
+    justify-content: space-between
+
+.production__item
+    border: 1px solid $cl_gray
+    display: flex
+    width: 370px
+    height: 290px
+    padding: 30px
+    line-height: 25px
+
+.production__title
+    text-transform: uppercase
+    font-weight: bold
+
+.two__column
+    ul
+        list-style-position: inside
+        -moz-column-count: 2
+        -webkit-column-count: 2
+        column-count: 2
+        height: 140px
+
+
+//==============================About===================
+
+.about__description
+    text-align: center
+    font-size: 24px
+    line-height: 28px
+    padding-top: 13px
+    padding-bottom: 34px
+
+.about__info
+    max-width: 1166px
+    padding-bottom: 30px
+    border-bottom: 1px solid $cl_gray
+
+.item__img
+    max-width: 62px
+    max-height: 62px
+    object-fit: cover
+    margin-right: 40px
+
+
+//==================================News=============================
+.news__inner
+    display: flex
+    justify-content: space-around
+
+.news__item
+    width: 398px
+    height: 170px
+    margin-right: 16px
+    padding: 18px 30px
+    box-shadow: 5px 5px 5px 5px transparent
+    border-top: 1px solid transparent
+    text-align: center
+    &:hover
+        box-shadow: 5px 5px 5px 5px rgba(0,0, 0, 0.1)
+        border-top: 1px solid $cl_blue
+        color:$cl_blue   
+        cursor: pointer     
+
+.news__date
+    padding-top: 29px
+    border-top: 1px solid transparent
+    color: $cl_gray
+    padding-bottom: 14px
+
+.news__description
+    &:hover
+        text-decoration: underline
+
+.news__button
+    padding: 12px 22px 15px 22px
+    border: 1px solid $cl_blue
+    margin: 50px auto 
+    width: 190px
+    border-radius: 3px
+    a
+        color: $cl_blue  
+//=================================Footer============================
+.footer
+   background-image: url('../img/footer.jpg')
+   position: relative
+
+.callBottom
+    top: -50px
+    right: 150px
+
+.footer__inner
+    display: flex
+    justify-content: space-between
+    padding-top: 31px
+
+.fotter__item .contacts
+    text-decoration: underline
+
+.footer__description
+    max-width: 261px
+
+.menu__bottom
+    .menu__item
+        line-height: 25px
+        text-decoration: underline
+        &:hover
+            cursor: pointer
+           
+
+.createBy
+    position: relative
+    padding-left: 30px
+    &::after
+        content: ""
+        background: url("../img/developer.png")
+        width: 15px
+        height: 15px
+        position: absolute
+        top: 0px
+        left: 5px
+
+
+.last__item
+    height: 90px
+    display: flex
+    flex-direction: column
+    justify-content: space-around
+
+//================================================Popup============================
+.popup 
+    position: relative
+    display: inline-block
+    cursor: pointer
+    -webkit-user-select: none
+    -moz-user-select: none
+    -ms-user-select: none
+    user-select: none
+
+
+
+.popup .popuptext 
+    visibility: hidden
+    width: 160px
+    background-color: #555
+    color: #fff
+    text-align: center
+    border-radius: 6px
+    padding: 8px 0
+    position: absolute
+    z-index: 1
+    bottom: 125%
+    left: 50%
+    margin-left: -80px
+
+
+.popup .popuptext::after 
+    content: ""
+    position: absolute
+    top: 100%
+    left: 50%
+    margin-left: -5px
+    border-width: 5px
+    border-style: solid
+    border-color: #555 transparent transparent transparent
+
+
+
+.popup .show 
+    visibility: visible
+    -webkit-animation: fadeIn 1s
+    animation: fadeIn 1s
+
+
+
+@-webkit-keyframes fadeIn 
+    from 
+        opacity: 0
+    to 
+        opacity: 1
+
+
+@keyframes fadeIn 
+    from 
+        opacity: 0
+    to 
+        opacity:1 
+
+//=======================================Мedia Quaries==================================
+@media screen and (max-width: 1400px) 
+    .callMe
+        right: 20px
+
+@media screen and (max-width: 1250px) 
+    .callBottom
+        top: -100px
+        
+@media screen and (max-width: 1100px) 
+    .header__description
+        max-width: 200px
+    .main__head
+        font-size: 35px
+        &::after
+            display: none
+    .header__menu-inner
+    .menu
+        border-top: 1px solid $cl_gray
+        li
+            padding-top: 10px
+            border-top: 2px solid transparent
+            position: relative
+            &::after
+                display: none
+    .footer
+        padding-bottom: 20px
+
+@media screen and (max-width: 900px) 
+    .logo
+        max-width: 150px
+    .production__item
+        padding: 10px
+
+@media screen and (max-width: 760px)
+    .header__top-inner
+        flex-direction: column
+        text-align: center
+    .header__description
+        max-width: 100%
+    .contact__inner
+        flex-direction: column
+        text-align: center
+    .phone
+        &::before
+            display: none
+        &::after
+            display: none
+    .logo
+        max-width: 250px
+    .header__top-inner
+        font-size: 18px
+        line-height: 24px
+    .popuptext, .phone
+        font-size: 14px
+        line-height: 16px
+    .main__head
+        line-height: 32px
+    .footer__inner
+        flex-direction: column
+        text-align: center
+        font-size: 16px
+        line-height: 24px
+    .footer__description
+        max-width: 100%
+    .callBottom
+        font-size: 14px
+    .createBy
+        &::after
+            display: none
+    .production__inner
+        flex-direction: column
+        text-align: center
+    .production__item
+        min-width: 100%
+        text-align: center
+        flex-direction: column
+    .callMe
+        top: 50%
+    .news__inner
+        flex-direction: column
+        text-align: center
+    .news__item
+        width: 100%
+        height: 130px
+        font-size: 16px
+        line-height: 20px
+
+    .news__date
+        padding-top: 5px
+
+    .footer
+        margin-top: 15px
+        margin-bottom: 15px
+@media screen and (max-width: 660px)
+    body
+        font-size: 18px
+        line-height: 24px
+    .menu
+        flex-direction: column
+        text-align: center
+    .callMe
+        font-size: 16px
+        line-height: 20px
+    .callBottom
+        top: 0px
+    .popuptext
+        font-size: 14px
+        line-height: 16px
